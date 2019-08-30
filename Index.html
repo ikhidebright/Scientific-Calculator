@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/segment7" type="text/css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2|Noticia+Text|Bellefair|PT+Sans">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <title>JS Calculator</title>
+    </head>
+    <body>
+        <form id="calc">
+            
+            <table>                 
+               <tr>
+             <div id="scrn">
+             <input type="text" value="DEG" name="mode" id="mode" disabled>
+               <input type="text" value="0" name="display" id="display" disabled></tr>
+               <tr>
+               <input type="text" value="" name="ans" id="ans" disabled>
+               </div>
+               </tr>
+                   
+                 <div id="modal">
+                     <div id= "content">
+                     <div class="mhead">
+                     <span id="close">&times;</span>
+                         <h1>User guide</h1>
+                         </div>
+                         <div class="mbody">
+                             
+                             
+                             <h3>Mode</h3>   
+                         <p>Tap the <b>mode</b> button to switch between Radians and Degrees for trigonomic functions. Deg or Rad in the top left corner of the display screen tells you what mode you’re in. <br/>
+                             </p>
+                             
+                             <h3>Shift</h3>   
+                         <p>The shift button is used to switch functions (of the <b>cos</b>, <b>sin</b>, <b>log</b>, <b>tan</b>, <b>e</b>, and <b>√</b>) keys.</p>
+                         <b>Example</b>
+                         To get the <b>sin&#8315;&#185;</b> of a number: <ol><li>Enter the number</li><li>Press the shift button</li> (<b>sin</b> changes to <b>sin&#8315;&#185;</b>) <li>Click the <b>sin&#8315;&#185;</b> button</li></ol>
+                         <b>Note: </b> <b>**</b> means raise to power <b>^</b>. So don't be scared of seeing <b>**</b> when you click <b>^</b>. 
+                         </div>
+                     </div>
+                 </div>
+               <div id="btn"></div>
+               
+            
+               <tr>
+                 
+                 <td> <input type="button" id="shift" name="shiftF" value="shift"></td>
+                 <td> <input type="button" id="m" name="m" value="mode"></td>
+                 <td> <input type="button" id="!" name="!" value="!"></td>
+                 <td> <input type="button" id="in" name="in" value="In"></td>
+                 
+              <td> <input type="reset" id="off" name="off" value="OFF"></td>
+                   
+                   
+               </tr>
+               <tr>
+               <td> <input type="button" onclick = sss("cos") id="cos" name="cos" value="cos"></td>
+               
+               <td> <input type="button" onclick = sss("sin") id="sin" name="sin" value="sin"></td>
+               
+                 <td> <input type="button" id="log" name="log" value="log"></td>
+                 
+                 <td> <input type="button" onclick = sss("tan") id="tan" name="tan" value="tan"></td>
+                 
+        
+                 
+                 
+                 <td> <input type="button" id="π" name="π" value="π"></td>
+                   
+               </tr>
+               
+            
+               
+               
+               
+               <tr>
+                <td> <input type="button" id="e" name="e" value="e"></td>
+                 <td> <input type="button" id="√" name="√" value="√"></td>
+                <td> <input type="button" id="rasPow" name="toPow" value="^"></td>
+                
+                 <td> <input type="button" id="del" name="delete" value="&larr;"></td>
+                 <td> <input type="button" id="ce" value="ON"></td>
+                   
+                   
+               </tr>
+               <tr>
+                 <td> <input type="button" onclick = num("7") id="7" name="seven" value="7"></td>
+                 <td> <input type="button" onclick = num("8") id="8" name="eight" value="8"></td>
+                 <td> <input type="button" onclick = num("9") id="9" name="nine" value="9"></td>
+                 <td> <input type="button" id="/" name="divide" value="&divide;"></td>
+                <td> <input type="button" id="%" name="percentage" value="&percnt;"></td>   
+                   
+               </tr>
+               
+            <tr>
+                 <td> <input type="button" onclick = num("4") id="4" name="four" value="4"></td>
+                 <td> <input type="button" onclick = num("5") id="5" name="five" value="5"></td>
+                 <td> <input type="button" onclick = num("6") id="6" name="six" value="6"></td>
+                 <td rowspan="2"> <input type="button" id="+" name="plus" value="+"></td>
+                 
+                 <td> <input type="button" id="x" name="multiply" value="&times;"></td>
+                 
+                   
+                   
+               </tr>
+               
+               <tr>
+                 <td> <input type="button" onclick = num("1") id="1" name="one" value="1"></td>
+                 <td> <input type="button" onclick = num("2") id="2" name="two" value="2"></td>
+                 <td> <input type="button" onclick = num("3") id="3" name="three" value="3"></td>
+               
+               
+                 <td> <input type="button" id="-" name="minus" value="-"></td>
+                   
+                   
+               </tr>
+               
+               <tr>
+                 <td> <input type="button" id="." name="point" value="."></td>
+                 <td> <input type="button" onclick = num("0") id="0" name="zero" value="0"></td>
+                 <td> <input type="button" onclick = num("00") id="00" name="zerozero" value="00"></td>
+                 
+                 <td id="go" colspan="2"><input type="button" id="=" name="equals" value="="></td>
+                 
+                   
+                   
+               </tr>
+                
+            </table>
+            
+        </form>
+        <button type="button" id="help">Read Calculator guide</button>
+    </body>
+</html>
