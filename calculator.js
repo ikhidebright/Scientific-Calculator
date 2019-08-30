@@ -150,26 +150,26 @@ if(sn === "shiftF"){
     document.getElementById("sin").setAttribute( "onClick", "sssh('sin')" );
     document.getElementById("sin").style.background = "olive";
     document.getElementById("sin").name = "sinh"
-    document.getElementById("sin").value = "sin"+up;
+    document.getElementById("sin").textContent = "sin"+up;
    
     document.getElementById("√").style.background = "olive";
     document.getElementById("√").name = "sq"
-    document.getElementById("√").value = "x"+ras;
+    document.getElementById("√").textContent = "x"+ras;
     document.getElementById("tan").setAttribute( "onClick", "sssh('tan')" );
     document.getElementById("tan").style.background = "olive";
     document.getElementById("tan").name = "tanh"
-    document.getElementById("tan").value = "tan"+up;
+    document.getElementById("tan").textContent = "tan"+up;
   
    document.getElementById("cos").setAttribute( "onClick", "sssh('cos')" );
     document.getElementById("cos").style.background = "olive";
     document.getElementById("cos").name = "cosh"
-    document.getElementById("cos").value = "cos"+up;
+    document.getElementById("cos").textContent = "cos"+up;
     document.getElementById("log").style.background = "olive";
     document.getElementById("log").value = "10^";
-    document.getElementById("log").name = "10x"
+    document.getElementById("log").textContent = "10x"
     
     document.getElementById("e").style.background = "olive";
-    document.getElementById("e").value = cbrt;
+    document.getElementById("e").textContent = cbrt;
     document.getElementById("e").name = "cbrt"
  }
  
@@ -178,34 +178,34 @@ if(sn === "shiftF"){
     document.getElementById("sin").setAttribute( "onClick", "sss('sin')" );
     document.getElementById("sin").style.background = "#222222";
     document.getElementById("sin").name = "sin"
-    document.getElementById("sin").value = "sin";
+    document.getElementById("sin").textContent  = "sin";
   
  
     document.getElementById("√").style.background = "#222222";
     document.getElementById("√").name = "√"
-    document.getElementById("√").value = "√";
+    document.getElementById("√").textContent  = "√";
    
    
    
    document.getElementById("tan").setAttribute( "onClick", "sss('tan')" );
     document.getElementById("tan").style.background = "#222222";
     document.getElementById("tan").name = "tan"
-    document.getElementById("tan").value = "tan";
+    document.getElementById("tan").textContent  = "tan";
    
    
    
    document.getElementById("cos").setAttribute( "onClick", "sss('cos')" );
     document.getElementById("cos").style.background = "#222222";
     document.getElementById("cos").name = "cos"
-    document.getElementById("cos").value = "cos";
+    document.getElementById("cos").textContent  = "cos";
   
     document.getElementById("log").style.background = "#222222";
     document.getElementById("log").value = "log";
-    document.getElementById("log").name = "log"
+    document.getElementById("log").textContent  = "log"
     
     
     document.getElementById("e").style.background = "#222222";
-    document.getElementById("e").value = "e";
+    document.getElementById("e").textContent  = "e";
     document.getElementById("e").name = "e"
  }   
    
@@ -277,7 +277,7 @@ let mx = document.querySelector("#mode").style.visibility = "hidden";
      let mx =  document.getElementById("mode").style.visibility = "visible";
      let x = document.getElementById("calc")[1].style;
        x.visibility="visible";
-      x.top = "15px"
+      x.top = "9px"
       x.color= "black"
      let ans = document.getElementById("ans");
      ans.style.color="black";
@@ -286,40 +286,40 @@ let mx = document.querySelector("#mode").style.visibility = "hidden";
  document.getElementById("shift").name = "shiftF";
  // sin
     document.getElementById("sin").style.background = "#222222";
-    document.getElementById("sin").value = "sin";
+    document.getElementById("sin").textContent  = "sin";
     document.getElementById("sin").setAttribute( "onClick", "sss('sin')" );
     
     //tan
     
     document.getElementById("tan").style.background = "#222222";
-    document.getElementById("tan").value = "tan";
+    document.getElementById("tan").textContent  = "tan";
     document.getElementById("tan").setAttribute( "onClick", "sss('tan')" );
     //cos
     
     document.getElementById("cos").style.background = "#222222";
-    document.getElementById("cos").value = "cos";
+    document.getElementById("cos").textContent  = "cos";
     document.getElementById("cos").setAttribute( "onClick", "sss('cos')" );
     
     // log
     
     document.getElementById("log").style.background = "#222222";
-    document.getElementById("log").value = "log";
+    document.getElementById("log").textContent  = "log";
     document.getElementById("log").name = "log"
     
     //in
     
     document.getElementById("in").style.background = "#222222";
-    document.getElementById("in").value = "In";
+    document.getElementById("in").textContent  = "In";
     
     // √
     
     document.getElementById("√").style.background = "#222222";
-    document.getElementById("√").value = "√";
+    document.getElementById("√").textContent  = "√";
     document.getElementById("√").name = "√"
     
     
     document.getElementById("e").style.background = "#222222";
-    document.getElementById("e").value = "e";
+    document.getElementById("e").textContent  = "e";
     document.getElementById("e").name = "e"
 
  
@@ -746,7 +746,7 @@ let ans = document.getElementById("ans").value;
 try{if(ans && dis === ""){
   let x = document.getElementById("calc")[1].style;
    x.color = "black";
-   x.top  = "15px";
+   x.top  = "11px";
    document.getElementById("calc")[1].value = ans;
    document.getElementById("ans").value = "";
     
