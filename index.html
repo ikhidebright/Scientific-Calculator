@@ -91,19 +91,14 @@ body {
     background-color:#e3fbe3;
 }
 
-#ans:focus{
-    outline:none;
-}
-
-#display:focus{
-    outline:none;
-}
-
 button {
 margin: 4px 3px 3px 3px;
 width:18%;
 height: 60px;
 border:none;
+-webkit-transition:0.75s;
+cursor:pointer;
+box-sizing: border-box;
 background-color: #222222;
 color:white;
 font-size:20px;
@@ -114,35 +109,6 @@ border-radius:5px;
 button:focus {
 outline:none;
 }
-
-td {
-  border: 1px solid black;
-  border-radius:5px;
-  width:30%;
-  height:30%;
-  
-}
-
-/*input[type="button"], [type="reset"] {
-  font-size:18px;
-  font-family:PT Sans;
-  background-color:#222222;
-  color:white;
-  font-weight:bold;
-  padding:2px;
-  border:none;
-  -webkit-transition:0.75s;
-   cursor:pointer;
-  box-sizing: border-box;
-  width:100%;
-  border-radius:5px;
-  height:100%;
-}*/
-
-/*input[type="button"]:focus, [type="reset"]:focus{
-    outline:none;
-}*/
-
 
 #mode{
 transition-duration:300ms;
@@ -163,12 +129,12 @@ border:1px solid black;
     color:white;
 }
 
-input[value="="] {
+button[value="="] {
     background-color:green;
     color:white;
 }
 
-input[value="="]:hover{
+button[value="="]:hover{
     background-color:#008000;
 }
 
@@ -204,9 +170,6 @@ input[value="="]:hover{
 
 
 .mhead{
-  /* position:fixed;
-   top:0;
-   width:79%;*/
     padding:2px;
     background-color:green;
     color:white;
