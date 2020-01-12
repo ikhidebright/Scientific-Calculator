@@ -2,10 +2,16 @@ body {
     background-color:white;
 }
 
+
+.cen {
+width: 100%;
+margin: 0 auto;
+}
+
 #scrn{
     background-color:#e3fbe3;
     width:100%;
-    height: 8vh;
+    height: 6vh;
     border:none;
 }
 
@@ -13,8 +19,8 @@ body {
     background-color:black;   
     padding: 0.4em;
     width: 100%;
-    margin: 0 auto;
-    margin-top: 4%;
+    /* margin: 0 auto; */
+    /* margin-top: 4%; */
     height: auto;
     border-radius: 1%;
 }
@@ -22,7 +28,7 @@ body {
 
 button {
     margin: 0.2em;
-    width: 18%;
+    width: 16.5%;
     height: 9vh;
     border: none;
     transition-duration: 0.75s;
@@ -91,7 +97,7 @@ button[name="plus"],button[name="minus"], button[name="multiply"], button[name="
 button[value="="] {
     background-color:green;
     color:white;
-    width:58%;
+    width:56%;
 }
 
 button[value="="]:hover{
@@ -99,8 +105,7 @@ button[value="="]:hover{
 }
 
 
-@media only screen and (min-width: 991px) {
-
+@media only screen and (min-width: 992px) {
     #scrn{
         background-color:#e3fbe3;
         width:100%;
