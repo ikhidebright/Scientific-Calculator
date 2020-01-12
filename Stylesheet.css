@@ -2,10 +2,10 @@ body {
     background-color:white;
 }
 
-
 .cen {
 width: 100%;
 margin: 0 auto;
+margin-top: 15%;
 }
 
 #scrn{
@@ -25,10 +25,9 @@ margin: 0 auto;
     border-radius: 1%;
 }
 
-
 button {
     margin: 0.2em;
-    width: 16.5%;
+    width: 15%;
     height: 9vh;
     border: none;
     transition-duration: 0.75s;
@@ -37,7 +36,7 @@ button {
     background-color: #222222;
     color:white;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.5em;
     font-family: PT Sans;
     border-radius: 3%;
 }
@@ -106,6 +105,13 @@ button[value="="]:hover{
 
 
 @media only screen and (min-width: 992px) {
+
+    .cen {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 15%;
+        }
+
     #scrn{
         background-color:#e3fbe3;
         width:100%;
@@ -125,7 +131,7 @@ button[value="="]:hover{
 
        button {
         margin: 0.2em;
-        width: 18.2%;
+        width: 17.2%;
         height: 9vh;
         border: none;
         transition-duration: 0.75s;
@@ -193,7 +199,7 @@ button[name="plus"],button[name="minus"], button[name="multiply"], button[name="
 button[value="="] {
     background-color:green;
     color:white;
-    width:58%;
+    width:57.2%;
 }
 
 button[value="="]:hover{
