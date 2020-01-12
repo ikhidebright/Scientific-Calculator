@@ -272,8 +272,6 @@ let mx = document.querySelector("#mode").style.visibility = "hidden";
 
  let ce = document.getElementById("ce").addEventListener("click", function(){
  
- document.querySelector("#help").style.visibility = "visible";
- 
      let mx =  document.getElementById("mode").style.visibility = "visible";
      let x = document.getElementById("calc")[1].style;
        x.visibility="visible";
@@ -567,18 +565,14 @@ document.getElementById("ans").value = no;
     if(ans){
     let display = document.getElementById("calc")[1].value = ans + "%";
         document.getElementById("ans").value = ans/100
-    }
-    
+    } 
     
    }catch(err){
     document.querySelector("#ans").value = "";
     }
     })
  
- 
  // this is for the square root(√) button
- 
- 
     
     let sqrt = document.getElementById("√").addEventListener("click", function(){
     let ans = document.getElementById("ans").value;
@@ -626,18 +620,15 @@ document.getElementById("ans").value = no;
     document.querySelector("#ans").value = "";
     }
     })
-  
  
   // this is for the backspace button
-   
     
     let del = document.getElementById("del").addEventListener("click", function delete_num () { 
     var display = document.getElementById("calc")[1].value;
     if(display === "0" || display === ""){
         var display = document.getElementById("calc")[1].value = "0"}else{
     
-    var field = document.getElementById('display'); field.value = field.value.slice(0, -1); }}) 
-    
+    var field = document.getElementById('display'); field.value = field.value.slice(0, -1); }})
     
     // this is for the log button
     
@@ -669,11 +660,9 @@ document.getElementById("ans").value = no;
     }}catch(err){
     document.querySelector("#ans").value = "";
     }
-    })
-    
+    }) 
     
     // this is for the pie button
-  
     
     let pie = document.getElementById("π").addEventListener("click", function(){
         var display = document.getElementById("calc")[1].value;
@@ -684,15 +673,10 @@ document.getElementById("ans").value = no;
       x.top = "0px"
       x.color= "#696969"
         document.getElementById("calc")[1].value = display +"π";
-        
         document.getElementById("ans").value = display * 3.14159;
-        
-    }})
-    
+    }}) 
     
     // this is for the e button
- 
- 
     
     let e = document.getElementById("e").addEventListener("click", function(){
     let ans = document.getElementById("ans").value;
@@ -739,7 +723,7 @@ document.getElementById("ans").value = no;
   
   // this is for the equals to button
     
-    let equals = document.getElementById("=").addEventListener("click", function(){
+let equals = document.getElementById("=").addEventListener("click", function(){
     
 let dis = document.getElementById("calc")[1].value;
 let ans = document.getElementById("ans").value;
@@ -766,23 +750,4 @@ try{if(ans && dis === ""){
         document.querySelector("#ans").value = err.name;
     }
    })
-    
-let modal = document.querySelector("#modal");
-let close = document.querySelector("#close");
-let btn = document.querySelector("#help");
-btn.onclick = function(){
-    modal.style.display = "block"
-}
-close.onclick = function(){
-    modal.style.display = "none";
-}
-
-
-}
-
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
 }

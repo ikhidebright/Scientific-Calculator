@@ -2,105 +2,70 @@ body {
     background-color:white;
 }
 
-#calc{
- background-color:black;   
- padding:10px;
- width:100%;
- height:150%;
- border-radius:5px;
- 
-}
-
 #scrn{
     background-color:#e3fbe3;
     width:100%;
-    height:40px;
-    border:none;
-}
-#help{
-    float:center;  
-    transition-duration:;
-    border-radius:2px;
-    text-align:center;
-    margin-top:5px;
-    font-size:17px;
-    background-color:wheat;
-    font-weight:bold;
-    color:black;
-    height:28px;
-    width:100%;
+    height: 8vh;
     border:none;
 }
 
-#help{
-    animation-name:shake;
-    animation-duration:400ms;
-    animation-fill-mode:forwards;
-}@keyframes shake {
-    50%{
-        transform:scale(0.5);
-    }100% {
-        transform:scale(1);
-}
+#calc{
+    background-color:black;   
+    padding: 0.4em;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 4%;
+    height: auto;
+    border-radius: 1%;
 }
 
-#help:focus{
-    outline:none;
-}
 
+button {
+    margin: 0.2em;
+    width: 17.5%;
+    height: 10vh;
+    border: none;
+    transition-duration: 0.75s;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: #222222;
+    color:white;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: PT Sans;
+    border-radius: 3%;
+}
 
 #ans{
     background-color:#e3fbe3;
-    border:none;
-    font-family:Segment7Standard;
-    width:100%;
-    text-align:right;
-    font-size:30px;
-    color: #000
-    outline:none;
-    font-weight:bold;
-    margin:0px;
-    padding-top:-60px;
-    
+    border: none;
+    font-family: Segment7Standard;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 2em;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 0.2em;
 }
 
 #display{
-    transition-duration:;
-    position:relative;
-    top:9px;
-    border:none;
-    outline:none;
-    width:100%;
-    text-align:right;
-    font-family:Orbitron;
-    font-size:14px;
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    font-family: Orbitron;
+    font-size: 1em;
     color:#000;
-    margin:0px;
     background-color:#e3fbe3;
 }
 
-button {
-margin: 4px 3px 3px 3px;
-width:18%;
-height: 60px;
-border:none;
--webkit-transition:0.75s;
-cursor:pointer;
-box-sizing: border-box;
-background-color:#222222;
-color:white;
-font-weight:bold;
-font-size:20px;
-font-family:PT Sans;
-border-radius:5px;
-}
 
 button:focus {
 outline:none;
 }
 
-#mode{
-transition-duration:;
+#mode {
 width: 20px;
 margin-left:5px;
 border-radius:2px;
@@ -133,50 +98,100 @@ button[value="="]:hover{
     background-color:#008000;
 }
 
-#modal{
-    z-index:1;
-    width:100%;
-    height:100%;
-    left:0;
-    position:fixed;
-    top:0;
-    display:none;
-    overflow:scroll;
-    background-color:rgb(0,0,0);
-    background-color:rgba(0,0,0,0.3);
-}
+
+@media only screen and (min-width: 991px) {
+
+    #scrn{
+        background-color:#e3fbe3;
+        width:100%;
+        height: 8vh;
+        border:none;
+    }
+
+    #calc{
+        background-color:black;   
+        padding: 0.4em;
+        width: 35%;
+        margin: 0 auto;
+        margin-top: 4%;
+        height: auto;
+        border-radius: 1%; 
+       }
+
+       button {
+        margin: 0.2em;
+        width: 18.2%;
+        height: 9vh;
+        border: none;
+        transition-duration: 0.75s;
+        cursor: pointer;
+        background-color: #222222;
+        color:white;
+        font-weight: bold;
+        font-size: 1em;
+        font-family:PT Sans;
+        border-radius: 3%;
+    }
+
+    #ans{
+        background-color:#e3fbe3;
+        border: none;
+        font-family: Segment7Standard;
+        width: 100%;
+        margin: 0 auto;
+        text-align: right;
+        font-size: 2em;
+        color: #000;
+        font-weight: bold;
+        margin-bottom: 0.2em;
+    }
+
+    #display{
+        border: none;
+        width: 100%;
+        margin: 0 auto;
+        text-align: right;
+        font-family: Orbitron;
+        font-size: 1em;
+        color:#000;
+        background-color:#e3fbe3;
+    }
 
 
-#content{
-   transition-duration:500ms;
-    margin:15% auto;
-    width:80%;
-    height:700px;
-    background-color:#fefefe;
-   border:1px solid #222222;
-    box-shadow:0 0 5px 0 #222222;
-}
+    button:focus {
+    outline: none;
+    }
 
-#close{
+    #mode {
+    width: 20px;
+    margin-left:5px;
+    border-radius:2px;
+    text-align:center;
+    font-size:9px;
+    background-color:#e3fbe3;
+    transform:scale(0.7);
     font-weight:bold;
-    float:right;
-    font-size:50px;
+    color:black;
+    border:1px solid black;
+    }
+
+    #ce {
+        background-color:#ff0000;
+        color:white;
+    }
+
+button[name="plus"],button[name="minus"], button[name="multiply"], button[name="divide"], button[name="percentage"],button[name="zerozero"]{
+    background-color:darkorange;
+    color:black;
 }
 
-
-.mhead{
-    padding:2px;
+button[value="="] {
     background-color:green;
     color:white;
+    width:58%;
 }
 
-.mhead h1{
-    font-family:PT sans;
+button[value="="]:hover{
+    background-color:#008000;
 }
-
-.mbody{
-    height:100%;
-    font-family:Bellefair;
-    font-size:20px;
-    margin:5px;
 }
