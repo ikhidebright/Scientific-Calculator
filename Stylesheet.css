@@ -5,30 +5,31 @@ body {
 .cen {
 width: 100%;
 margin: 0 auto;
-margin-top: 15%;
+margin-top: 1vmin;
 }
 
 #scrn{
     background-color:#e3fbe3;
     width:100%;
-    height: 6vh;
-    border:none;
+    margin: 0 auto;
+    height: auto;
+    border: none;
 }
 
 #calc{
     background-color:black;   
-    padding: 0.4em;
-    width: 100%;
-    /* margin: 0 auto; */
-    /* margin-top: 4%; */
+    padding: 0.8vmin;
+    width: 87vmin;
+    margin: 0 auto;
     height: auto;
+    margin-top: 9%;
     border-radius: 1%;
 }
 
 button {
-    margin: 0.2em;
-    width: 15%;
-    height: 9vh;
+    margin: 1vmin;
+    width: 15vmin;
+    height: 15vmin;
     border: none;
     transition-duration: 0.75s;
     cursor: pointer;
@@ -36,9 +37,9 @@ button {
     background-color: #222222;
     color:white;
     font-weight: bold;
-    font-size: 0.5em;
+    font-size: 4vmin;
     font-family: PT Sans;
-    border-radius: 3%;
+    border-radius: 1vmin;
 }
 
 #ans{
@@ -46,61 +47,60 @@ button {
     border: none;
     font-family: Segment7Standard;
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: right;
-    font-size: 2em;
+    font-size: 6vmin;
     color: #000;
     font-weight: bold;
-    margin-bottom: 0.2em;
 }
 
 #display{
     border: none;
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: right;
     font-family: Orbitron;
-    font-size: 1em;
+    font-size: 4vmin;
     color:#000;
     background-color:#e3fbe3;
 }
 
 
 button:focus {
-outline:none;
+outline: none;
 }
 
 #mode {
-width: 20px;
-margin-left:5px;
-border-radius:2px;
+width: 6vmin;
+margin-left: 1vmin;
 text-align:center;
-font-size:9px;
+font-size: 3vmin;
 background-color:#e3fbe3;
 transform:scale(0.7);
 font-weight:bold;
 color:black;
-border:1px solid black;
+border: 1px solid black;
 }
 
 #ce {
-    background-color:#ff0000;
+    background-color:#b40000;
     color:white;
 }
 
 button[name="plus"],button[name="minus"], button[name="multiply"], button[name="divide"], button[name="percentage"],button[name="zerozero"]{
-    background-color:darkorange;
-    color:black;
+    background-color:rgb(173, 104, 0);
+    color: white;
 }
 
 button[value="="] {
-    background-color:green;
+    background-color:rgb(0, 61, 0);
     color:white;
-    width:56%;
+    width: 49vmin;
+    height: 15vmin;
 }
 
 button[value="="]:hover{
-    background-color:#008000;
+    background-color:#007200;
 }
 
 
