@@ -71,7 +71,7 @@ outline: none;
 }
 
 #mode {
-width: 6vmin;
+width: 7vmin;
 margin-left: 1vmin;
 text-align:center;
 font-size: 3vmin;
@@ -79,7 +79,7 @@ background-color:#e3fbe3;
 transform:scale(0.7);
 font-weight:bold;
 color:black;
-border: 1px solid black;
+border: none;
 }
 
 #ce {
@@ -109,39 +109,39 @@ button[value="="]:hover{
     .cen {
         width: 100%;
         margin: 0 auto;
-        margin-top: 15%;
+        margin-top: 0.5vmin;
         }
 
     #scrn{
         background-color:#e3fbe3;
         width:100%;
-        height: 8vh;
+        height: auto;
         border:none;
     }
 
     #calc{
         background-color:black;   
-        padding: 0.4em;
-        width: 35%;
+        padding: 1vmin;
+        width: 60vmin;
         margin: 0 auto;
-        margin-top: 4%;
+        margin-top: 1vmin;
         height: auto;
-        border-radius: 1%; 
+        border-radius: 1vmin; 
        }
 
        button {
-        margin: 0.2em;
-        width: 17.2%;
-        height: 9vh;
+        margin: 0.5vmin;
+        width: 10.5vmin;
+        height: 10.5vmin;
         border: none;
         transition-duration: 0.75s;
         cursor: pointer;
         background-color: #222222;
         color:white;
         font-weight: bold;
-        font-size: 1em;
+        font-size: 3vmin;
         font-family:PT Sans;
-        border-radius: 3%;
+        border-radius: 1vmin;
     }
 
     #ans{
@@ -151,10 +151,9 @@ button[value="="]:hover{
         width: 100%;
         margin: 0 auto;
         text-align: right;
-        font-size: 2em;
+        font-size: 5vmin;
         color: #000;
         font-weight: bold;
-        margin-bottom: 0.2em;
     }
 
     #display{
@@ -163,7 +162,7 @@ button[value="="]:hover{
         margin: 0 auto;
         text-align: right;
         font-family: Orbitron;
-        font-size: 1em;
+        font-size: 2.5vmin;
         color:#000;
         background-color:#e3fbe3;
     }
@@ -174,35 +173,35 @@ button[value="="]:hover{
     }
 
     #mode {
-    width: 20px;
-    margin-left:5px;
+    width: 6vmin;
+    margin-left: 0.3vmin;
     border-radius:2px;
     text-align:center;
-    font-size:9px;
+    font-size: 2vmin;
     background-color:#e3fbe3;
-    transform:scale(0.7);
     font-weight:bold;
     color:black;
-    border:1px solid black;
+    border: none;
     }
 
     #ce {
-        background-color:#ff0000;
+        background-color:#b40000;
         color:white;
     }
 
 button[name="plus"],button[name="minus"], button[name="multiply"], button[name="divide"], button[name="percentage"],button[name="zerozero"]{
-    background-color:darkorange;
-    color:black;
+    background-color:rgb(173, 104, 0);
+    color: white;
 }
 
 button[value="="] {
-    background-color:green;
+    background-color:rgb(0, 61, 0);
     color:white;
-    width:57.2%;
+    height: 10.5vmin;
+    width: 33.5vmin;
 }
 
 button[value="="]:hover{
-    background-color:#008000;
+    background-color:#007000;
 }
 }
